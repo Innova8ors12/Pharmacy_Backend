@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="tabler-icon-file-analytics_4_" data-name="tabler-icon-file-analytics (4)" opacity="0.5">
+    <path id="Path_25030" data-name="Path 25030" d="M0,0H26V26H0Z" fill="none"/>
+    <path id="Path_25031" data-name="Path 25031" d="M14,3V7.333a1.083,1.083,0,0,0,1.083,1.083h4.333" transform="translate(1.167 0.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_25032" data-name="Path 25032" d="M18,22.5H7.167A2.167,2.167,0,0,1,5,20.333V5.167A2.167,2.167,0,0,1,7.167,3H14.75l5.417,5.417V20.333A2.167,2.167,0,0,1,18,22.5Z" transform="translate(0.417 0.25)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_251" data-name="Line 251" y1="5" transform="translate(10 13)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_252" data-name="Line 252" y1="1" transform="translate(13 17)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_253" data-name="Line 253" y1="3" transform="translate(16 15)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

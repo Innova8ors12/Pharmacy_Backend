@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_20861" data-name="Rectangle 20861" width="27" height="27" transform="translate(46 414.517)" fill="#fff" stroke="#000" stroke-width="1.5"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_114" data-name="Mask Group 114" transform="translate(-46 -414.517)" opacity="0.5" clip-path="url(#clip-path)">
+    <g id="tabler-icon-archive_3_" data-name="tabler-icon-archive (3)" transform="translate(46 414.967)">
+      <path id="Path_25033" data-name="Path 25033" d="M0,0H26.55V26.55H0Z" fill="none"/>
+      <rect id="Rectangle_20860" data-name="Rectangle 20860" width="19.913" height="4.425" rx="2.167" transform="translate(3.319 4.425)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_25034" data-name="Path 25034" d="M5.417,8.667V19.729a2.213,2.213,0,0,0,2.213,2.213H18.692A2.213,2.213,0,0,0,20.9,19.729V8.667" transform="translate(0.115 0.183)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <line id="Line_254" data-name="Line 254" x2="4.425" transform="translate(11.063 13.275)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

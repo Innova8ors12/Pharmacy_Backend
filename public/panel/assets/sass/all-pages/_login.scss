@@ -1,0 +1,39 @@
+// start login page
+.cover-login {
+    min-height: 100vh;
+    padding: 40px;
+    .cover-loging-content {
+        overflow: hidden;
+        background: white;
+        padding: 40px 25px 25px;
+        margin: auto;
+        flex-basis: 384px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        @include border-radius(30px);
+        button {
+            box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
+            &:hover {
+                box-shadow: none;
+            }
+        }
+        img {
+            width: 95px;
+        }
+    }
+}
+
+.password-eye {
+    position: relative;
+    i {
+        position: absolute;
+        top: 48px;
+        right: 13px;
+        color: #bdbdbd;
+        cursor: pointer;
+        font-size: 20px;
+    }
+}
+
+// end login page

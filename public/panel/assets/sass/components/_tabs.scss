@@ -1,0 +1,64 @@
+// ######################### start tabs option ####################
+.cover-tab-v1 {
+    ul {
+        li {
+            button {
+                padding: 10px 30px;
+                color: var(--primary-clr);
+                &:hover,
+                &:focus {
+                    border: 1px solid transparent !important;
+                }
+                &.active {
+                    position: relative;
+                    border: 1px solid transparent !important;
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 2px;
+                        background: var(--primary-clr);
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//########################### end tabs option #######################
+// ######################### start tabs option ####################
+.tabs-style-1 {
+    ul {
+        border-bottom: 1px solid #f8f8f8;
+        li {
+            button {
+                padding: 10px 30px;
+                color: var(--primary-clr);
+                font-weight: 600;
+                &:hover,
+                &:focus {
+                    border: 1px solid transparent !important;
+                    letter-spacing: 0;
+                }
+                &.active {
+                    position: relative;
+                    border: 1px solid transparent !important;
+                    background: #f8f8f8 !important;
+                    &::before {
+                        content: "";
+                        width: 100%;
+                        height: 2px;
+                        background: var(--primary-clr);
+                        position: absolute;
+                        bottom: -2px;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//########################### end tabs option #######################

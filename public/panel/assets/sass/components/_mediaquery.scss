@@ -1,0 +1,56 @@
+@mixin container-w($container-w) {
+    @media screen and (min-width: $container-w + 'px') {
+        @content
+    }
+}
+
+.wrap-container {
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @include container-w(320) {
+        max-width: calc(100% - 20px);
+    }
+    @include container-w(576) {
+        max-width: calc(100% - 100px);
+    }
+    @include container-w(992) {
+        max-width: calc(100% - 120px);
+    }
+    @include container-w(1200) {
+        max-width: calc(100% - 120px);
+    }
+    @include container-w(1440) {
+        max-width: 1440px;
+    }
+}
+
+.res-nav-item .nav-item .nav-link {
+    padding: 10px 1.2vw !important;
+}
+
+// @media screen and (min-width: 320px) {
+//     .wrap-container {
+//         max-width: calc(100% - 20px);
+//     }
+// }
+// @media screen and (min-width: 567px) {
+//     .wrap-container {
+//         max-width: calc(100% - 100px);
+//     }
+// }
+// @media screen and (min-width: 992px) {
+//     .wrap-container {
+//         max-width: calc(100% - 120px);
+//     }
+// }
+// @media screen and (min-width: 1200px) {
+//     .wrap-container {
+//         max-width: calc(100% - 120px);
+//     }
+// }
+// @media screen and (min-width: 2560px) {
+//     .wrap-container {
+//         max-width: calc(100% - 120px);
+//     }
+// }

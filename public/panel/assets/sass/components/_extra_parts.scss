@@ -1,0 +1,29 @@
+.progress {
+    height: 10px;
+    .facebook-bar {
+        background: #5289C9;
+    }
+    .instagram-bar {
+        background: #2862FF;
+    }
+    .google-bar {
+        background: #FF6A81;
+    }
+    .google-link {
+        background: #EB4A8A;
+    }
+}
+
+// arrow down
+.arrow-down {
+    position: relative;
+    &::before {
+        content: '\e313';
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        font-family: 'Material Icons';
+        transform: translateY(-50%);
+        font-size: 24px;
+    }
+}

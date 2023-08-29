@@ -1,0 +1,177 @@
+%btn {
+    padding: 10px 15px;
+    background: var(--primary-clr);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    @include border-radius(5px);
+    border: 1px solid var(--primary-clr);
+    white-space: nowrap;
+    i {
+        font-size: 20px;
+    }
+    &:hover {
+        color: white;
+        border: 1px solid var(--black-btn-clr);
+        background: var(--black-btn-clr);
+    }
+}
+
+.right-icon {
+    i {
+        margin-right: -7px;
+        // margin-left: 7px;
+    }
+}
+
+.left-icon {
+    i {
+        margin-left: -7px;
+        // margin-right: 7px;
+    }
+}
+
+button {
+    @include transition(.5s !important);
+}
+
+.primary-btn {
+    @extend %btn;
+}
+
+.primary-outline-btn {
+    @extend %btn;
+    background: transparent;
+    border: 1px solid var(--primary-clr);
+    color: var(--primary-clr);
+    &:hover {
+        background: var(--primary-clr);
+        border: 1px solid var(--primary-clr);
+    }
+}
+
+.secondary-btn {
+    @extend %btn;
+    border: 1px solid var(--secondary-clr);
+    background: var(--secondary-clr);
+}
+
+.secondary-outline-btn {
+    @extend %btn;
+    background: transparent;
+    border: 1px solid var(--secondary-clr);
+    color: var(--secondary-clr);
+    &:hover {
+        background: var(--secondary-clr);
+        border: 1px solid var(--secondary-clr);
+    }
+}
+
+.light-gray-btn {
+    @extend %btn;
+    border: 1px solid #E6EBF1;
+    background: #E6EBF1;
+    color: #455560;
+    i {
+        line-height: normal;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.black-btn {
+    @extend %btn;
+    border: 1px solid var(--black-btn-clr);
+    background: var(--black-btn-clr);
+    &:hover {
+        border: 1px solid var(--primary-clr);
+        background: var(--primary-clr);
+    }
+}
+
+.black-outline-btn {
+    @extend %btn;
+    background: transparent;
+    color: var(--black-btn-clr);
+    border: 1px solid var(--black-btn-clr);
+    &:hover {
+        color: white;
+        background: var(--black-btn-clr);
+    }
+}
+
+.gradient-btn {
+    @extend %btn;
+    background: linear-gradient(90deg, var(--primary-clr) 0%, var(--secondary-clr) 100%);
+    border: none !important;
+    &:hover {
+        background: linear-gradient(90deg, var(--primary-clr) 0%, var(--secondary-clr) 100%);
+        color: white;
+        opacity: 0.7;
+    }
+}
+
+.checkbox-btn {
+    position: relative;
+    overflow: hidden;
+    input[type=radio] {
+        -webkit-appearance: none;
+        border: none !important;
+        margin: auto;
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+        pointer-events: none;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        &:checked~label {
+            background: var(--primary-clr);
+            border: 1px solid var(--primary-clr);
+            color: white;
+        }
+    }
+    label {
+        cursor: pointer;
+        color: #4F4F4F;
+        font-weight: 400;
+        padding: 10px 15px;
+        border: 1px solid #EEEEEE;
+        @include border-radius(5px);
+        @include transition(.2s);
+        text-align: center;
+        width: 100%;
+        font-size: 14px;
+        &:hover {
+            background: var(--primary-clr);
+            color: white;
+        }
+    }
+}
+
+.white-btn {
+    @extend %btn;
+    background: white;
+    color: var(--black-btn-clr);
+    border: 1px solid #EEEEEE;
+    svg {
+        fill: #333333;
+        @include transition(.5s);
+    }
+    &:hover {
+        svg {
+            fill: white;
+        }
+    }
+}
+
+// extra btn padding
+$extra-padding: 15;
+@while $extra-padding <=80 {
+    .extra-btn-padding-#{$extra-padding} {
+        padding: 10px #{$extra-padding}px;
+    }
+    $extra-padding: $extra-padding+5;
+}

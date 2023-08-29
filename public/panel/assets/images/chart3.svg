@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150.38" height="49" viewBox="0 0 150.38 49">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5ee2a0"/>
+      <stop offset="1" stop-color="#5ee2a0" stop-opacity="0.502"/>
+    </linearGradient>
+  </defs>
+  <path id="Bar_Chart" data-name="Bar Chart" d="M142.323,49V26.95h8.056V49Zm-12.084,0V12.25h10.742V49Zm-12.084,0V24.5H128.9V49Zm-12.084,0V33.075h10.741V49ZM93.987,49V18.374h10.741V49ZM81.9,49V6.124H92.645V49ZM69.819,49V18.374H80.561V49ZM57.735,49V24.5H68.477V49ZM45.651,49V0H56.393V49ZM33.567,49V12.25H44.309V49Zm-9.4,0V26.95h8.056V49ZM12.084,49V12.25H22.826V49ZM0,49V24.5H10.741V49Z" fill="url(#linear-gradient)"/>
+</svg>

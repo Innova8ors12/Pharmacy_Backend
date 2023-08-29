@@ -1,0 +1,176 @@
+.sb-topnav .nav-link {
+    color: #767B89 !important;
+}
+
+button#sidebarToggle i {
+    font-size: 24px;
+}
+
+.notify-dot {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: var(--primary-clr);
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    line-height: 16px;
+    text-align: center;
+    @include border-radius(50px);
+    p {
+        color: white;
+        font-size: 11px;
+    }
+}
+
+.item-count {
+    position: absolute;
+    top: -3px;
+    right: -4px;
+    background: var(--secondary-clr);
+    width: 25px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    @include border-radius(50px);
+    p {
+        color: white;
+        font-size: 11px;
+        line-height: initial;
+    }
+}
+
+.profile {
+    img {
+        width: 45px;
+        height: 45px;
+        object-fit: scale-down;
+    }
+    .dropdown-menu {
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05);
+        @include border-radius(5px);
+        padding: 10px !important;
+        width: max-content;
+        li {
+            &:first-child {
+                border-bottom: 0.6px solid #D4DDE8;
+                margin-bottom: 4px;
+                padding-bottom: 4px;
+                p {
+                    font-size: 12px;
+                }
+            }
+            &:not(:first-child):not(:last-child) {
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            a {
+                &:active,
+                &.active {
+                    background-color: #e9ecef;
+                }
+                padding: 7px 15px;
+                color: #7A7F8B;
+                font-size: 15px;
+                @include border-radius(5px);
+                .cover-profile-dropdown {
+                    img:not([alt=student-img]) {
+                        width: 20px;
+                        height: 20px;
+                        object-fit: initial;
+                    }
+                    h6 {
+                        margin: 0;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: #828282;
+                        margin: 0;
+                        line-height: initial;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.bell {
+    li {
+        i {
+            color: #455560;
+        }
+    }
+    .dropdown-menu {
+        box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05);
+        width: 320px;
+        border: none;
+        .cover-notifications {
+            height: 291px;
+            overflow-y: auto;
+            &::-webkit-scrollbar {
+                width: 9px;
+                background: #fafafa;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: lightgrey;
+                height: 56px;
+                border-radius: 8px;
+                border: 2px solid transparent;
+                background-clip: content-box;
+            }
+            li {
+                a {
+                    white-space: inherit;
+                    padding: 15px;
+                    .inner-notification {
+                        h6 {
+                            margin-bottom: 0;
+                        }
+                        p {
+                            font-size: 13px;
+                            margin-bottom: 4px;
+                            &:last-child {
+                                font-size: 11px;
+                                color: #828282;
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                    &.active,
+                    &:active {
+                        color: inherit;
+                        background-color: #FFF6F3;
+                    }
+                }
+                &:not(:last-child) {
+                    margin-bottom: 2px;
+                }
+            }
+        }
+        &>div:first-child {
+            padding: 15px;
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 17px;
+            margin-bottom: 0 !important;
+            a {
+                font-size: 13px;
+                font-weight: 400;
+                &:hover {
+                    color: var(--primary-clr);
+                }
+            }
+        }
+    }
+}
+
+.caret-none {
+    &::after {
+        display: none;
+    }
+}

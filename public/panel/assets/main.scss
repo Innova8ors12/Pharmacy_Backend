@@ -1,0 +1,161 @@
+//####################
+// START VARIABALES
+// #####################
+:root {
+    --primary-clr: #508FF4;
+    --primary-rgb-clr: 80, 143, 244;
+    --primary-img-filter: invert(44%) sepia(96%) saturate(1249%) hue-rotate(198deg) brightness(101%) contrast(92%);
+    --secondary-clr: #b4171d;
+    --secondary-rgb-clr: 180, 23, 29;
+    --black-btn-clr: #1F1F1F;
+    --border-clr: #E6EBF1;
+    --sidebarwidth: 195px;
+    --nagativesidebarwidth: -195px;
+}
+
+//####################
+// END VARIABALES
+// #####################
+//####################
+// START IMPORT FILES
+// #####################
+@import "assets/sass/all_components";
+@import "assets/sass/all_pages";
+//####################
+// END IMPORT FILES
+// #####################
+div#frontdashboard2 {
+    @include transform(translateX(-25px));
+}
+
+.row.row-eq-height {
+    margin-bottom: 20px;
+}
+
+.row-eq-height [class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.primary-bg {
+    background: var(--primary-clr) !important;
+}
+
+.primary-text {
+    color: var(--primary-clr) !important;
+}
+
+.primary-light-clr-1 {
+    background: var(--primary-light-clr-1);
+}
+
+.primary-light-clr-2 {
+    background: var(--primary-light-clr-2);
+}
+
+.primary-light-clr-3 {
+    background: var(--primary-light-clr-3);
+}
+
+.primary-anchor {
+    color: var(--primary-clr) !important;
+    &:hover {
+        color: var(--anker-hover-clr) !important;
+    }
+}
+
+.secondary-anchor {
+    color: var(--secondary-clr) !important;
+    &:hover {
+        color: var(--primary-clr) !important;
+    }
+}
+
+.black-anchor {
+    color: var(--black-clr-1) !important;
+    &:hover {
+        color: var(--primary-clr) !important;
+    }
+}
+
+.success-text {
+    color: #09bd3c !important;
+}
+
+.secondary-bg {
+    background: var(--secondary-clr) !important;
+}
+
+.secondary-text {
+    color: var(--secondary-clr) !important;
+}
+
+// ACTIVE BTN
+.active-btn {
+    background: var(--primary-clr) !important;
+    color: white !important;
+}
+
+.active-text {
+    color: var(--primary-clr) !important;
+}
+
+.column-spacing {
+    [class*="col-"]>div {
+        margin: 10px;
+    }
+}
+
+// END ACTIVE BTN
+.primary-hover-clr {
+    &:hover {
+        color: var(--primary-clr) !important;
+    }
+}
+
+.secondary-hover-clr {
+    &:hover {
+        color: var(--secondary-clr) !important;
+    }
+}
+
+//####################
+// START top NAV BAR
+// #####################
+@include toggler;
+// @include sticky-top;
+//####################
+// END top NAV BAR
+//####################
+//####################
+// start center content
+//####################
+// end map chart
+::-webkit-scrollbar {
+    width: 9px;
+    background: #fafafa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b1b1b1;
+    height: 56px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: var(--primary-clr);
+    text-shadow: none;
+}
+
+::selection {
+    color: #fff;
+    background: var(--primary-clr);
+    text-shadow: none;
+}
+
+//####################
+// END center content
+//####################

@@ -1,0 +1,54 @@
+    /* @media screen and (min-width: 992px) {}
+    
+    @media screen and (min-width:320px) {
+        nav.navbar .wrap-container {
+            padding: 0;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-align: center;
+            align-items: center;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            width: 100%;
+        }
+    } */
+    
+    @media screen and (max-width: 576px) {
+        
+        .cover-nav {
+            padding-bottom: 4vw;
+        }
+        .cover-filters {
+            justify-content: center;
+        }
+        .search-bar {
+            margin: auto;
+        }
+        .bell .dropdown-menu {
+            transform: translateX(158px);
+        }
+        .cover-all-content {
+            padding: 90px 20px 40px 20px !important;
+        }
+        .logo-sm img {
+            width: 70px;
+            margin-left: 0px;
+        }
+        .sb-topnav {
+            position: fixed;
+            width: 100%;
+        }
+        .ball .dropdown-menu {
+            transform: translate(135px, 14px);
+        }
+        /* page title */
+        .page-title h4 {
+            font-size: 20px;
+        }
+        /* course */
+        .cover-card-products .cover-img img{
+            height: auto;
+        }
+    }
