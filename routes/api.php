@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\Customer\LoginController;
 use App\Http\Controllers\Api\Customer\OrderController;
 use App\Http\Controllers\Api\Customer\PharmacyController;
 use App\Http\Controllers\Api\Common\ProductController;
+use App\Http\Controllers\Api\Common\ReportController as CommonReportController;
 use App\Http\Controllers\Api\Customer\RatingController;
 use App\Http\Controllers\Api\Customer\RegisterController;
 use App\Http\Controllers\Api\Customer\UploadPrescriptionController;
@@ -48,6 +49,9 @@ Route::get('readNotification/{id}', [NotificationController::class, 'readNotific
 
 Route::get('getProduct', [ProductController::class, 'getProduct']);
 Route::get('getSingleProduct/{id}', [ProductController::class, 'getSingleProduct']);
+
+
+Route::get('prescriptionPdf/{id}', [CommonReportController::class, 'prescriptionPdf']);
 
 //------------- PHARMACY AUTHENTICATION API ROUTES -------------------//
 Route::post('createpharmacy', [PharmassistRegisterController::class, 'createPharmacy']);
@@ -97,6 +101,7 @@ Route::group(['prefix' => 'pharmacy'], function () {
     Route::get('getPharmacyTransaction', [PharmassistLoginController::class, 'getPharmacyTransaction']);
     Route::post('withdrawalRequest', [PharmassistLoginController::class, 'withdrawalRequest']);
     Route::get('getWithdrawalRequest', [PharmassistLoginController::class, 'getWithdrawalRequest']);
+
 });
 //------------- PHARMACY API ROUTES END -------------------//
 
@@ -108,11 +113,11 @@ Route::group(['prefix' => 'rider'], function () {
     Route::post('register', [AuthController::class, 'register']);
     Route::post('resend-otp', [AuthController::class, 'resendOtp']);
     Route::post('check-otp', [AuthController::class, 'CheckOtp']);
-    
+
     Route::post('profile/update', [AuthController::class, 'update']);
     Route::get('getLoginUser', [AuthController::class, 'getLoginUser']);
-    
-    
+
+
     Route::post('login', [AuthController::class, 'login']);
     Route::post('change-password', [ForgetPasswordController::class, 'forgetPassword']);
     Route::post('checkOtp', [ForgetPasswordController::class, 'checkOtp']);
@@ -121,16 +126,16 @@ Route::group(['prefix' => 'rider'], function () {
     Route::get('orders', [RiderOrderController::class, 'getAll']);
     Route::post('order/change-status', [RiderOrderController::class, 'order_status']);
     Route::get('order/history', [RiderOrderController::class, 'orderHistory']);
-    
+
     Route::get('/notifications', [NotificationController::class, 'getNotificationRider']);
-    
-    
+
+
     Route::get('/reports/getRides/{date?}', [ReportController::class, 'getRides']);
     Route::get('/reports/getEarned/{date?}', [ReportController::class, 'getEarned']);
     Route::get('/reports/getGraph', [ReportController::class, 'getGraph']);
-    
+
     Route::post('/update/latlong', [AuthController::class, 'updateLatLong']);
-    
+
     Route::post('/update/fcmtoken', [AuthController::class, 'updateFcm']);
 
 });
